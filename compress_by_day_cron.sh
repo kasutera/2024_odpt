@@ -1,5 +1,7 @@
 #!/bin/bash
 # GNU date
+cd "$(dirname "$0")" || exit 1
+
 DATE=$(date +%Y-%m-%d --date '1 day ago')
 
 for dataset in hellocycling docomo-cycle docomo-cycle-tokyo; do
